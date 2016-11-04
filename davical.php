@@ -384,7 +384,7 @@ $c->template_usr = array( 'active' => true,
 * People interested in providing new translations are directed to the Wiki:
 *   http://wiki.davical.org/w/Translating_DAViCal
 */
-$c->default_locale = "it_IT";
+$c->default_locale = "en_US";
 
 /**
 * Default will be $_SERVER['SERVER_NAME'];

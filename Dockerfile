@@ -1,7 +1,7 @@
 #Version 0.3
 #Davical + apache + postgres
 #---------------------------------------------------------------------
-#Default configuration: hostname: davical.example
+#Default configuration: hostname: davical.dev
 #			user: admin			
 #			pass: 12345
 #TODO:
@@ -20,9 +20,9 @@
 #---------------------------------------------------------------------
 
 FROM 	alpine:edge
-MAINTAINER Andrea Oliveri <oliveriandrea (at) gmail.com>
+MAINTAINER Nath <example (at) gmail.com>
 
-ENV	TIME_ZONE "Europe/Rome"
+ENV	TIME_ZONE "Asia/Jakarta"
 
 RUN	apk --update add \
 	bash \
@@ -111,6 +111,7 @@ RUN echo "export TERM=xterm" >> /root/.bashrc
 # ----------------------------------------
 
 EXPOSE 80
+EXPOSE 5432
 VOLUME 	["/var/lib/postgresql/data/","/config"]
 ENTRYPOINT ["/sbin/docker-entrypoint.sh"]
 
