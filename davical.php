@@ -4,7 +4,7 @@
 *            These apply everywhere and will need setting                  *
 *                                                                          *
 ***************************************************************************/
-$c->domain_name = 'davical.example';
+$c->domain_name = 'mydavical.dev';
 $c->sysabbr = 'davical';
 
 /****************************
