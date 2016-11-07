@@ -1,7 +1,7 @@
 #Version 0.3
 #Davical + apache + postgres
 #---------------------------------------------------------------------
-#Default configuration: hostname: davical.dev
+#Default configuration: hostname: mydavical.dev
 #			user: admin			
 #			pass: 12345
 #TODO:
@@ -114,8 +114,7 @@ RUN echo "export TERM=xterm" >> /root/.bashrc
 # RUN usermod -u 1000 www-data
 # RUN usermod -G 50 www-data
 
-EXPOSE 80
-EXPOSE 5432
+EXPOSE 80 5432
 VOLUME 	["/var/lib/postgresql/data/","/config"]
 ENTRYPOINT ["/sbin/docker-entrypoint.sh"]
 
