@@ -110,6 +110,10 @@ RUN 	chmod 0755 /sbin/initialize_db.sh \
 RUN echo "export TERM=xterm" >> /root/.bashrc
 # ----------------------------------------
 
+# Map directory ownership (standard setup).
+# RUN usermod -u 1000 www-data
+# RUN usermod -G 50 www-data
+
 EXPOSE 80
 EXPOSE 5432
 VOLUME 	["/var/lib/postgresql/data/","/config"]

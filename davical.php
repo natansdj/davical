@@ -16,8 +16,8 @@ $c->sysabbr = 'davical';
 * successively applying connection parameters from the array in
 * $c->pg_connect.
 */
-$c->pg_connect[] = "dbname=davical user=davical_app";
-// $c->pg_connect[] = "dbname=davical user=davical_app port=5433 host=somehost password=mypass";
+$c->pg_connect[] = "dbname=davical user=davical_app port=5432";
+// $c->pg_connect[] = "dbname=davical user=davical_app port=5432 host=somehost password=mypass";
 
 
 /****************************
@@ -64,7 +64,7 @@ $c->pg_connect[] = "dbname=davical user=davical_app";
 * a user has lost his password and clicks on the "Help! I've forgotten my
 * password" on the login page.
 */
-$c->admin_email ='admin@example.com';
+$c->admin_email ='nth@example.com';
 
 /**
 * Set this to 'true' in order to restrict the /setup.php page (which contains
